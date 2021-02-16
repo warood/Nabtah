@@ -24,34 +24,34 @@ we also have a blog to make a communication between our users to share  our prod
 <b>Some of screenshots from website:</b>
 
 The home page shows all the products added by the merchant
-![Home page](https://git.generalassemb.ly/Project2-kappa/project-2/blob/master/public/Home.PNG)
+![Home page](public/Home.PNG)
 
 
 You can view by category using the drop-down lists on the page header
-![Catg page](https://git.generalassemb.ly/Project2-kappa/project-2/blob/master/public/Catg.PNG)
+![Catg page](public/Catg.PNG)
 
 
 If you want more details about a product easily click on its picture
 or type the name in the search bar
-![show page](https://git.generalassemb.ly/Project2-kappa/project-2/blob/master/public/show.PNG)
+![show page](public/show.PNG)
 
 
 Join us in Nabtah Friends, where you can add pictures of your plants and tell us what is new and how you are taking care of them.
-![Friends page](https://git.generalassemb.ly/Project2-kappa/project-2/blob/master/public/blogPlant.png)
-![Friends page](https://git.generalassemb.ly/Project2-kappa/project-2/blob/master/public/blogGarden.png)
+![Friends page](public/blogPlant.png)
+![Friends page](public/blogGarden.png)
 
 You can read more about Nabtah and always contact us through the following links
-![info page](https://git.generalassemb.ly/Project2-kappa/project-2/blob/master/public/info.PNG)
+![info page](public/info.PNG)
 
 
  sessions are used to log out
-![Seissions](https://git.generalassemb.ly/Project2-kappa/project-2/blob/master/public/logout.png)
+![Seissions](public/logout.png)
 
 
  sessions are used to make only logged in user can add to cart
-![Seissions](https://git.generalassemb.ly/Project2-kappa/project-2/blob/master/public/addCart.png)
+![Seissions](public/addCart.png)
 
 sessions are used to make only logged in user can post to our blog
-![Seissions](https://git.generalassemb.ly/Project2-kappa/project-2/blob/master/public/postBlog.png)
+![Seissions](public/postBlog.png)
 
 <b> link to the website: https://nabtah-1.herokuapp.com/ </b> 

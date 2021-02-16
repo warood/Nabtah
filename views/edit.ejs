@@ -1,0 +1,23 @@
+<h1>Edit Product Page</h1>
+<form action="/products/<%= products._id %>?_method=put" method="POST">
+  <label for="nameP">Name</label>
+  <input type="text" name="nameP" id="nameP" value="<%= products.nameP %>" />
+
+  <label for="pic">pic</label>
+  <input type="text" name="pic" id="pic" value="<%= products.pic %>" />
+
+  <label for='category'>category:</label>
+  <input type="text" name="category" id="category" value="<%= products.category %>">
+
+  <label for='price'>price</label>
+  <input type="number" name="price" id="price" value="<%= products.price %>">
+
+  <label for='description'>description</label>
+  <input type="text" name="description" id="description" value="<%= products.description %>">
+
+  <label for='qty'>qty</label>
+  <input type="text" name="qty" id="qty" value="<%= products.qty %>">
+
+  <input type="submit" value="Edit">
+
+</form>

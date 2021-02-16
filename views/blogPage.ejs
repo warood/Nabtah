@@ -1,0 +1,27 @@
+<div class="col">
+  <div>
+    <form method="POST" style="padding-left: 100px;" action="/blogCheckUser">
+      <input class="btn btn-outline-success" type="submit" value="Share with us">
+    </form>
+  </div>
+  <div style="position: static;padding-bottom: 20px;margin: auto; " class="w-50 h-30">
+    <% message.forEach((ele,i)=> { %>
+      <div class="card " style="padding-bottom: 50px;">
+        <img src="<%= ele.img %>" class="card-img-top w-20 h-20" alt="customer plants">
+        <div class="card-body">
+
+          <h4 class="card-text">
+            <%= ele.message %>
+          </h4>
+        </div>
+
+
+      </div>
+
+      <% }) %>
+
+
+
+  </div>
+
+</div>

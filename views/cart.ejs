@@ -1,0 +1,67 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="cart.js"></script>
+<body>
+    <div class="container">
+        <div class="heading">
+            </head>
+            <h1>
+                Nabtah Cart
+            </h1>
+        </div>
+        <div class="nabtahcart">
+
+
+
+            <table class="table table-striped">        
+                        <thead>
+                    <td></td>
+                    <td>Name</td>
+                    <td>price</td>
+                    <td>QTY</td>
+                    <td>Total</td>
+                    <td></td>
+                <tbody>
+                    <% for(let i=0; i<cart.length;i++){%>
+                        <tr>
+                            <td>
+                                <%= i+1 %>
+                            </td>
+                            <td>
+                                <%= cart[i].nameP %>
+                            </td>
+                            <td>
+                                <%= cart[i].price %> SR
+                            </td>
+
+
+                                <td> 
+                                    
+                                    <input type="number" id="1" value="<%=count1[cart[i].nameP]%>" min="1" max="5" />
+                                    
+                                </td>
+                                <td>
+                                    <%=cart[i].price * count1[cart[i].nameP]%> RS
+                                </td>
+                                <td>
+
+
+                                    <form action="/cart/delete/<%= cart[i]._id%>" method="POST" class="remove">
+                                        <input type="hidden" name="prodId" value="<%= cart[i]._id%>">
+
+                                        <button type="submit" class="btn btn-outline-success">Delete</button>
+
+                                    </form>
+                                </td>
+                                  
+                        </tr>
+                     <%} %>
+                </tbody>
+                </thead>
+            </table>
+        </div>
+        <div class="">
+       
+ </div>
+ <button type="submit" class="btn btn-outline-success   " style= ' margin-left: 500px;bottom: 150px;'>Checkout</button>
+    </div>
+</body>

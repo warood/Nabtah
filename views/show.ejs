@@ -1,0 +1,34 @@
+<div style="width:250px; height: 300px; padding-left:50px; display: inline-block;">
+  <div class="card">
+
+    <img src="<%= products.pic %>" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title"></h5>
+      <p class="card-text">
+        <%= products.nameP %>
+      </p>
+      <p class="card-text">Category: <%= products.category %>
+      </p>
+
+    </div>
+    <div class="card-footer">
+      <small class="text-muted">
+        <%= products.price %> SR
+      </small>
+
+      <form method="POST" action="addToCart">
+
+        <button style="padding-left: 50px;" type="button" class="btn btn-outline-secondary">Add To Cart</button>
+      </form>
+    </div>
+
+  </div>
+</div>
+<div style="width:800px; height: 300px; padding-left:50px; display: inline-block;">
+  <div class="card-body">
+    <h5 class="card-title">Description: </h5>
+    <p class="card-text">
+      <%= products.description %>
+    </p>
+  </div>
+</div>

@@ -1,0 +1,32 @@
+<body>
+  <% products.forEach(element=> {%>
+
+    <div style="width:250px; height: 300px;padding-bottom: 400px; padding-left:50px; display: inline-block;">
+      <div class="card" style="display: flex; height: max-content;">
+        <a href="/products/<%=element._id%> "><img src="<%= element.pic %>" class="card-img-top "
+            style="height: 250px; width:200px;" alt="..."></a>
+        <div class="card-body">
+          <h5 class="card-title"></h5>
+          <p class="card-text">
+            <%= element.nameP %>
+          </p>
+
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">
+            <%= element.price %> SR
+          </small>
+
+          <form method="POST" action="/addToCart/<%=element._id%>">
+
+            <input style="padding-left: 50px;" type="submit" class="btn btn-outline-secondary" value="Add to cart" />
+          </form>
+        </div>
+
+      </div>
+    </div>
+    <% })%>
+
+
+
+</body>

@@ -1,0 +1,42 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+<div style="margin:0px; bottom: 0%; padding-right:0%; padding-left: 500px; width: max-content; height: 500px; ">
+
+  <div style="width: max-content;">
+    <ul class="nav nav-tabs">
+      <li class="active"><a data-toggle="tab" href="#signUp">sign Up</a></li>
+      <li><a data-toggle="tab" href="#SignIn">Log In </a></li>
+      <p style="padding-top: 11px;"><a href="/logout">Logout</a></p>
+    </ul>
+
+    <div class="tab-content " style="padding-top: 20px;width:1000px;">
+      <div id="signUp" class="tab-pane fade in active">
+        <form method="POST" action="/signup" class='col-1'>
+          <label for='username'>User Name:</label>
+          <input type="text" name="username" placeholder="username">
+          <label style="padding-top: 20px;" for='email'>Email:</label>
+          <input type="text" name="email" placeholder="email">
+          <label style="padding-top: 20px;" for='password'>Password:</label>
+          <input type="password" name="password" placeholder="password">
+          <label style="padding-top: 20px;" for='confirepassword'>Confirme Password:</label>
+          <input style="margin-bottom: 20px;" type="password" name="confirepassword" placeholder="confirepassword">
+          <input style="margin-left: 30px;" type="submit" value="Signup">
+        </form>
+
+      </div>
+      <div id="SignIn" class="tab-pane fade" style="width:2000px;">
+        <form method="POST" action="/login" class="col-1 text-center ">
+          <label for='username' style="padding-top: 20px;">User Name:</label>
+          <input type="text" name="username" placeholder="username">
+          <label for='password' style="padding-top: 20px;">Password:</label>
+          <input type="password" name="password" placeholder="password">
+
+          <input id="share" type="submit" value="Login" style="margin-top: 20px;">
+          <p style="padding-top: 25px;"> <a href="/forgot">Forgot My Password</a></p>
+
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

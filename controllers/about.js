@@ -1,0 +1,17 @@
+const express =require('express')
+const router = express.Router()
+
+
+
+
+
+
+router.get("/AboutUs" ,(req ,res)=>{
+    
+        res.render("about" )
+
+ 
+})
+
+
+module.exports = router

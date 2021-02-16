@@ -1,0 +1,24 @@
+
+<body>
+  
+
+    <% products.forEach(element => {%>
+    
+      <div style="width:250px; height: 300px;padding-bottom: 400px; padding-left:50px; display: inline-block;">
+      <div style="display: flex; height: max-content;"  class="card"  >
+        
+      <a href="/products/<%=element._id%> "><img  style="height: 250px; width:200px;" src="<%= element.pic %>" class="card-img-top" alt="..."></a>
+        <div class="card-body">
+          <h5 class="card-title"></h5>
+          <p class="card-text"><%= element.nameP %></p>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted"><%= element.price %> SR   </small>
+          <button style= "padding-left: 50px;" type="button" class="btn btn-outline-secondary">Add To Cart</button>
+        </div>
+      </div>
+    </div>
+    <% })%>
+  </div>
+</body>
+    

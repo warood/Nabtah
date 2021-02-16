@@ -7,7 +7,7 @@ we also have a blog to make a communication between our users to share  our prod
 
 <b>Wireframe:</b>
 
-![initial wire frame](https://git.generalassemb.ly/Project2-kappa/project-2/blob/master/public/wireframe.png)
+![initial wire frame](public/wireframe.png)
 
 <b>Used technologies:</b>
 
